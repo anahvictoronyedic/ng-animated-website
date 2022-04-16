@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --background:linear-gradient(180deg, #38B3BF 0%, #1695A3 100%);
+    --border-color:#F3FFE2;
+    --text-color:#F3FFE2;
+}
+
+body{
+    background: var(--background);
+    margin: 0px;
+}

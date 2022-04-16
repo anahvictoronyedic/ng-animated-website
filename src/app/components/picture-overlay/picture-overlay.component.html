@@ -1,0 +1,16 @@
+
+<button
+(click)="close()"
+aria-label="Close"
+class="close-btn"
+>
+X
+</button>
+
+<div class="info">
+    <h1 class="info__title">{{picture?.title}}</h1>
+</div>
+
+<div class="picture">
+    <img class="picture__image" [src]="picture?.image?.url"/>
+</div>

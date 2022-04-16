@@ -1,0 +1,28 @@
+
+<div class="page">
+
+    <div class="page-info">
+
+        <h1 class="page-info__title">New Zealand</h1>
+
+        <p class="page-info__desc">This project might be trickier than it seems. Look around carefully. 
+            What you see? The sky is blue. The grass is green. The sun shines through a window.
+        </p>
+    </div>
+
+    <div class="picture-grid">
+        <div class="picture-grid__block" *ngFor="let picture of pictures; let i = index" >
+            <div class="picture-grid__block-shell" [class.picture-grid__block-shell--circle]="i % 4 == 0 || (i + 1) % 4 == 0">
+
+                <div class="picture-grid__image" 
+                [style.background-image]="'url(' + (picture.thumbnail?.url || picture.image.url) + ')'" 
+                (click)="onClick(picture)">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
